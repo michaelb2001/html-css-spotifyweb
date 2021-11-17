@@ -162,3 +162,44 @@ hr{
         display: none;
     }
 }
+
+
+
+footer{
+    height: 80px;
+    width:100%;
+    background-color: rgb(41, 41, 41);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:10px;
+}
+
+.left{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left img{
+    height:50px;
+}
+
+.text{
+    margin-left:10px;
+}
+
+.text p,
+.text span{
+    margin-left:20px;
+}
+
+.text p{
+    color: white;
+}
+
+.text span{
+    color: rgb(150, 150, 150);
+}
+
+i
