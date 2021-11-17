@@ -46,7 +46,6 @@
                 <p>Nome Playlist</p>
             </div>
 
-
             <div class="install-user">
                 <div class="install">
                     <img src="img/download.svg" alt="">
@@ -64,39 +63,50 @@
                 
 
             </div>
-        </nav>
+        
+    </nav>
 
-        <div class="container">
+    <div class="container">
 
-        </div>
-    </main>
+    </div>
+</main>
 
 
-    <footer>
+<footer>
 
-        <div class="left">
-            <img src="img/sinister.jpeg" alt="">
-                <div class="text">
-                    <p>Sinister</p>
-                    <span>Brano Nome</span>
-                </div>
-                <i class="far fa-heart"></i>
-                <i class="far fa-folder"></i>
-
+    <div class="left">
+        <img src="img/sinister.jpeg" alt="">
+            <div class="text">
+                <p>Sinister</p>
+                <span>Brano Nome</span>
+            </div>
+            <div class="left-icon">
+                <i class="fas fa-heart"></i>
+                <i class="fas fa-folder"></i>
+            </div>
         </div>
 
         <div class="center">
             <div class="foot-icon">
                 <i class="fas fa-random"></i>
                 <i class="fas fa-step-backward"></i>
+                <i class="fas fa-play-circle"></i>
                 <i class="fas fa-step-forward"></i>
-                <i class="far fa-play-circle"></i>
                 <i class="fas fa-redo"></i>
             </div>
+
+            <div class="bar">
+                <span>0:25</span>
+                <progress id="file" value="35" max="100"></progress>
+                <span>4:35</span>
+            </div>
         </div>
-
+        
         <div class="right">
-
+            <i class="fas fa-list-ul"></i>
+            <i class="fas fa-desktop"></i>
+            <i class="fas fa-volume-up"></i>
+            <progress id="file" value="10s" max="75"></progress>
         </div>
     </footer>
 </body>

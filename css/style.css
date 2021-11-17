@@ -101,70 +101,6 @@ hr{
 
 
 
-
-@media screen and (max-width:576px){
-    nav{
-        width: 10%;
-        background-color: black;
-        padding:5px;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .container{
-        width: 90%;
-    }
-    
-    .logo>img:nth-child(2){
-        display: block;
-        width:100%;
-    }
-    
-    .logo img:nth-child(1){
-        display: none;
-    }
-    
-    nav ul{
-        display:flex;
-        flex-direction: column;
-        justify-items: center;
-        align-content: center;
-    }
-    .icon{
-        display: flex;
-        height: 30px;
-        color: rgb(150, 150, 150);
-    }
-    
-    ul{
-        margin-top:10px;
-    }
-    nav ul li{
-        margin-top:5px;
-    }
-    nav ul li a{
-        text-decoration: none;
-        color: rgb(150, 150, 150);
-    }
-    
-    nav ul li a span{
-        display: none;
-    }
-    .playlist{
-        margin-top:5px;
-        display: none;
-    }
-    
-    .install-user{
-        color: white;
-        display: none;
-    }
-}
-
-
-
 footer{
     height: 80px;
     width:100%;
@@ -175,12 +111,21 @@ footer{
     padding:10px;
 }
 
+.left,.right{
+    width:250px;
+}
+
+
 .left{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
 }
 
+.right{
+    display: flex;
+    justify-content: flex-end;
+}
 .left img{
     height:50px;
 }
@@ -202,4 +147,221 @@ footer{
     color: rgb(150, 150, 150);
 }
 
-i
+.left-icon{
+    margin-left:10px;
+    color: rgb(150, 150, 150);
+}
+
+.left-icon i:nth-child(2){
+    margin-left:5px;
+}
+
+
+.center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:white;
+}
+
+.foot-icon{
+    font-size:18px;
+    color: white;
+}
+
+.foot-icon i{
+    margin:0px 5px;
+}
+
+
+.right i,
+.right progress{
+    margin:0px 5px;
+    color:white;
+    font-size:14px;
+}
+
+
+
+
+
+
+
+
+
+
+/* responsive nav */
+
+@media  screen and (max-width:576px){
+    nav{
+        width: 10%;
+        background-color: black;
+        padding:10px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    
+    .container{
+        width: 85%;
+    }
+    
+    .logo img:nth-child(1){
+        display: none;
+    }
+    
+    .logo img:nth-child(2){
+        display: inline-block;
+        width: 40px;
+    }
+    
+    nav ul{
+        display:flex;
+        flex-direction: column;
+        justify-items: center;
+    }
+
+    .icon{
+        height: 40px;
+        color: rgb(150, 150, 150);
+    }
+    
+    ul{
+        margin-top:10px;
+    }
+    nav ul li{
+        margin-top:5px;
+    }
+    nav ul li a{
+        text-decoration: none;
+        color: rgb(150, 150, 150);
+    }
+    
+    nav ul li a span{
+        display: none;
+    }
+
+    .playlist{
+        display: none;
+    }
+
+    .install-user{
+        color: white;
+        display: flex;
+        flex-direction: column;   
+        align-items: center;
+        justify-content: flex-start;
+        
+    }
+
+    .install-user img{
+        height: 20px;
+    }
+    
+    hr{
+        margin : 10px 0px;
+    }
+    
+    hr{
+        display: none;
+    }
+    .user span,
+    .install span {
+        display: none;
+    }
+    .user img{
+        height: 40px;
+        border-radius: 100%;
+        background-color: rgb(150, 150, 150);
+    }
+
+}
+
+/* responsive footer*/
+
+
+footer{
+    height: 80px;
+    width:100%;
+    background-color: rgb(41, 41, 41);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:10px;
+}
+
+.left,.right{
+    width:15%;
+}
+
+
+.left{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.right{
+    display: flex;
+    justify-content: flex-end;
+}
+.left img{
+    height:50px;
+}
+
+.text{
+    margin-left:2px;
+}
+
+.text p,
+.text span{
+    margin-left:4px;
+}
+
+.text p{
+    color: white;
+}
+
+.text span{
+    color: rgb(150, 150, 150);
+}
+
+.left-icon{
+    margin-left:2px;
+    color: rgb(150, 150, 150);
+}
+
+.left-icon i:nth-child(2){
+    margin-left:1px;
+}
+
+
+.center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:white;
+}
+
+.foot-icon{
+    font-size:14px;
+    color: white;
+}
+
+.foot-icon i{
+    margin:0px 1px;
+}
+
+
+.right i,
+.right progress{
+    margin:0px 1px;
+    color:white;
+    font-size:10px;
+}
+
+
