@@ -14,14 +14,10 @@ main{
 }
 
 nav{
-    width: 15%;
+    width: 200px;
     background-color: black;
     padding:10px;
     height: 100%;
-}
-
-.container{
-    width: 85%;
 }
 
 .logo>img:nth-child(2){
@@ -71,6 +67,9 @@ nav ul li a{
     margin-top:10px;
 }
 
+.nav-top{
+    height: calc(100% - 80px);
+}
 
 .install-user{
     color: white;
@@ -131,7 +130,10 @@ footer{
 }
 
 .text{
-    margin-left:10px;
+    margin:0px 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .text p,
@@ -148,16 +150,14 @@ footer{
 }
 
 .left-icon{
-    margin-left:10px;
+    margin-left:20px;
     color: rgb(150, 150, 150);
 }
 
-.left-icon i:nth-child(2){
-    margin-left:5px;
-}
 
 
 .center{
+    width: 70%;    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -166,7 +166,7 @@ footer{
 }
 
 .foot-icon{
-    font-size:18px;
+    font-size:20px;
     color: white;
 }
 
@@ -174,12 +174,31 @@ footer{
     margin:0px 5px;
 }
 
+.bar{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.progress{
+    width:50%;
+    height: 3px;
+    background-color: rgb(150, 150, 150);;
+    border-radius: 15px;
+    padding:2px;
+}
 
 .right i,
-.right progress{
+.right .progress{
     margin:0px 5px;
     color:white;
-    font-size:14px;
+    font-size:18px;
+}
+
+.container{
+    width: calc(100% - 200px);
+    height: 100%;
+    background-color: rgb(34, 34, 34);
 }
 
 
@@ -191,11 +210,31 @@ footer{
 
 
 
-/* responsive nav */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media  screen and (max-width:576px){
+/* responsive nav */
     nav{
-        width: 10%;
+        width: 50px;
         background-color: black;
         padding:10px;
         height: 100%;
@@ -206,7 +245,7 @@ footer{
     }
     
     .container{
-        width: 85%;
+        width: calc(100% - 50px) ;
     }
     
     .logo img:nth-child(1){
@@ -278,90 +317,104 @@ footer{
         background-color: rgb(150, 150, 150);
     }
 
-}
 
 /* responsive footer*/
-
-
-footer{
-    height: 80px;
-    width:100%;
-    background-color: rgb(41, 41, 41);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding:10px;
+    footer{
+        height: 80px;
+        width:100%;
+        background-color: rgb(41, 41, 41);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding:10px;
+    }
+    
+    .left,.right{
+        width:15%;
+    }
+    
+    
+    .left{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    
+    .right{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .left img{
+        height:50px;
+    }
+    
+    .text{
+        margin-left:2px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    
+    .text p,
+    .text span{
+        margin-left:4px;
+    }
+    
+    .text p{
+        color: white;
+    }
+    
+    .text span{
+        color: rgb(150, 150, 150);
+    }
+    
+    .left-icon{
+        margin-left:2px;
+        color: rgb(150, 150, 150);
+    }
+    
+    
+    
+    .center{
+        width: 70%;    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color:white;
+    }
+    
+    .foot-icon{
+        font-size:14px;
+        color: white;
+    }
+    
+    .foot-icon i{
+        margin:0px 1px;
+    }
+    
+    .bar{
+        display: flex;
+        width:100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .progress{
+        width:50%;
+        height: 3px;
+        background-color: rgb(150, 150, 150);;
+        border-radius: 15px;
+        padding:2px;
+    }
+    
+    .right i,
+    .right .progress{
+        margin:0px 1px;
+        color:white;
+        font-size:10px;
+    }
 }
 
-.left,.right{
-    width:15%;
-}
 
-
-.left{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.right{
-    display: flex;
-    justify-content: flex-end;
-}
-.left img{
-    height:50px;
-}
-
-.text{
-    margin-left:2px;
-}
-
-.text p,
-.text span{
-    margin-left:4px;
-}
-
-.text p{
-    color: white;
-}
-
-.text span{
-    color: rgb(150, 150, 150);
-}
-
-.left-icon{
-    margin-left:2px;
-    color: rgb(150, 150, 150);
-}
-
-.left-icon i:nth-child(2){
-    margin-left:1px;
-}
-
-
-.center{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color:white;
-}
-
-.foot-icon{
-    font-size:14px;
-    color: white;
-}
-
-.foot-icon i{
-    margin:0px 1px;
-}
-
-
-.right i,
-.right progress{
-    margin:0px 1px;
-    color:white;
-    font-size:10px;
-}
 
 
