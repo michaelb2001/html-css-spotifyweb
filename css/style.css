@@ -223,7 +223,7 @@ footer{
     justify-content: flex-end;
     align-items: center;
     height: 100px;
-
+    z-index:2;
 }
 
 .div-head span{
@@ -289,9 +289,21 @@ footer{
 .foto span{
     color: rgb(150, 150, 150);
     font-size: 0.8em;
+    text-align: center;
 }
 
-.foto .hover-play{
+
+.fc{
+    position:relative;
+}
+
+.fc i{
+    position:absolute;
+    top: 35%;
+    left:50%;
+    transform: translate(-50%,-0%);
+}
+.fc .hover-play{
     display: none;
     position: absolute;
     top:35%;
@@ -303,9 +315,25 @@ footer{
     filter: brightness(20%);
 }
 
-.foto:hover .hover-play{
+.foto:hover .fc>.hover-play{
     display: block;
 }
+
+.crato_xte>div{
+
+}
+.cxt_items{
+    width:calc(100%-200px);
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 0px;
+    justify-content: flex-start;
+    margin-right:20px;
+    align-items: flex-start;
+}
+
+
+
 
 
 
@@ -336,11 +364,13 @@ footer{
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: flex-start;
+        justify-content: space-between;
+        overflow-x: hidden;
     }
     
     .container{
         width: calc(100% - 50px) ;
+        overflow-x: hidden;
     }
     
     .logo img:nth-child(1){
@@ -509,6 +539,125 @@ footer{
         color:white;
         font-size:10px;
     }
+
+
+
+    .container{
+        width: calc(100% - 50px);
+        height: 100%;
+        background-color: rgb(34, 34, 34);
+        overflow-y: scroll;
+    }
+    
+    .div-head{
+        background-color: rgba(0,0,0,.4);
+        position: fixed;
+        width: calc(100% - 50px) ;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        height: 50px;
+        z-index:2;
+    }
+    
+    .div-head span{
+        color: white;
+        border :1px solid white;
+        border-radius: 15px;
+        padding: 15px;
+        margin: 10px 15px;
+    }
+    
+    .div-nav{
+        padding-top:100px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        text-align: center;
+        width: calc(100%-50px);
+    }
+    .div-nav ul {
+        list-style-type: none;
+        display: flex;
+    } 
+    
+    .div-nav ul li a{
+        text-decoration: none;
+        color: rgb(150, 150, 150);
+        margin:0px 4px;
+        text-transform: uppercase;
+        width: 15px;
+    }
+    
+    
+    .div-content{
+        margin: 10px 20px;
+    }
+
+    .recently_played{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 10px 0px;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+    
+    .div-content h3{
+        color: white;
+    }
+    
+    .foto{
+        width: 130px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap:wrap;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+    
+    .foto img{
+        width: 100%;
+    }
+    
+    .foto p{
+        color: white;
+        margin-top:5px;
+        text-align: center;
+    }
+    .foto span{
+        color: rgb(150, 150, 150);
+        font-size: 0.8em;
+        text-align: center;
+    }
+    
+    
+    .fc{
+        position:relative;
+    }
+    
+    .fc i{
+        position:absolute;
+        top: 35%;
+        left:50%;
+        transform: translate(-50%,-0%);
+    }
+    .fc .hover-play{
+        display: none;
+        position: absolute;
+        top:35%;
+        color: white;
+        font-size: 30px;
+    }
+    
+    .foto:hover img{
+        filter: brightness(20%);
+    }
+    
+    .foto:hover .fc>.hover-play{
+        display: block;
+    }
+    
 }
 
 
