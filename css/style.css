@@ -209,6 +209,8 @@ footer{
     width: calc(100% - 200px);
     height: 100%;
     background-color: rgb(34, 34, 34);
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 .div-head{
@@ -217,6 +219,7 @@ footer{
     width:100%;
     display: flex;
     justify-content: flex-end;
+    height: 100px;
 
 }
 
@@ -228,13 +231,61 @@ footer{
     margin: 10px;
 }
 
+.div-nav{
+    padding-top:100px;
+    display: flex;
+    justify-content: center;
+}
+.div-nav ul {
+    list-style-type: none;
+    display: flex;
+} 
+
+.div-nav ul li a{
+    text-decoration: none;
+    color: rgb(150, 150, 150);
+    margin:0px 20px;
+    text-transform: uppercase;
+}
 
 
+.div-content{
+    margin: 10px 20px;
+}
+.recently_played{
 
+    margin: 10px 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
 
+.div-content h3{
+    color: white;
+}
 
+.foto{
+    width:15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap:wrap;
 
+}
 
+.foto img{
+    width: 100%;
+}
+
+.foto p{
+    color: white;
+    margin-top:5px;
+}
+.foto span{
+    color: rgb(150, 150, 150);
+    font-size: 0.8em;
+}
 
 
 
