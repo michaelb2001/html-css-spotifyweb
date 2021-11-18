@@ -28,6 +28,9 @@ nav{
     padding:10px;
     height: 100%;
     overflow-y: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .logo>img:nth-child(2){
@@ -52,7 +55,7 @@ ul{
     margin-top:10px;
 }
 nav ul li{
-    margin-top:5px;
+    margin:5px 0px;
 }
 nav ul li a{
     text-decoration: none;
@@ -75,10 +78,6 @@ nav ul li a{
 
 .playlist p{
     margin-top:10px;
-}
-
-.nav-top{
-    height: calc(100% - 80px);
 }
 
 .install-user{
@@ -214,15 +213,15 @@ footer{
     height: 100%;
     background-color: rgb(34, 34, 34);
     overflow-y: scroll;
-    overflow-x: hidden;
 }
 
 .div-head{
     background-color: rgba(0,0,0,0.4);
     position: fixed;
-    width:100%;
+    width: calc(100% - 200px) ;
     display: flex;
     justify-content: flex-end;
+    align-items: center;
     height: 100px;
 
 }
@@ -232,7 +231,7 @@ footer{
     border :1px solid white;
     border-radius: 15px;
     padding: 15px;
-    margin: 10px;
+    margin: 10px 15px;
 }
 
 .div-nav{
@@ -257,9 +256,9 @@ footer{
     margin: 10px 20px;
 }
 .recently_played{
-
-    margin: 10px 0px;
     display: flex;
+    flex-wrap: wrap;
+    margin: 10px 0px;
     justify-content: space-around;
     align-items: flex-start;
 }
@@ -269,7 +268,7 @@ footer{
 }
 
 .foto{
-    width:15%;
+    width: 130px;
     display: flex;
     flex-direction: column;
     flex-wrap:wrap;
@@ -285,6 +284,7 @@ footer{
 .foto p{
     color: white;
     margin-top:5px;
+    text-align: center;
 }
 .foto span{
     color: rgb(150, 150, 150);
