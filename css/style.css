@@ -271,7 +271,7 @@ footer{
 }
 
 .foto{
-    width: 130px;
+    width: calc(100% / 6 );
     display: flex;
     flex-direction: column;
     flex-wrap:wrap;
