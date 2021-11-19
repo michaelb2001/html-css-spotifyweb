@@ -347,9 +347,6 @@ footer{
 
 .creato_xte{
     margin: 10px 0px ;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
 }
 .cxt_items{
     display: flex;
@@ -360,10 +357,7 @@ footer{
 }
 
 .artisti{
-    margin: 50px 0px ;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+    margin: 10px 0px ;
 }
 .artisti_items{
     display: flex;
@@ -380,7 +374,8 @@ footer{
 
 /*effetti hover*/
 
-nav ul li:hover,
+.nav-top ul li:hover a,
+.nav-top ul li:hover img,
 .playlist span:hover,
 .playlist p:hover,
 .text span:hover,
@@ -692,6 +687,7 @@ nav ul li:hover,
         justify-content: center;
         align-items: center;
         cursor: pointer;
+        margin: 0px 10px ;
     }
     
     .foto img{
