@@ -7,6 +7,7 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
+    color: rgb(150, 150, 150);
 }
 main{
     width: 100%;
@@ -200,7 +201,7 @@ footer{
 
 .right i,
 .right .progress{
-    margin:0px 5px;
+    margin:0px 10px;
     color:white;
     font-size:18px;
 }
@@ -242,6 +243,8 @@ footer{
 .div-nav ul {
     list-style-type: none;
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 } 
 
 .div-nav ul li a{
@@ -259,7 +262,7 @@ footer{
     display: flex;
     flex-wrap: wrap;
     margin: 10px 0px;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: flex-start;
 }
 
@@ -275,6 +278,7 @@ footer{
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    margin-right: 20px;
 }
 
 .foto img{
@@ -319,18 +323,38 @@ footer{
     display: block;
 }
 
-.crato_xte>div{
-
+.creato_xte{
+    margin: 10px 0px ;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 .cxt_items{
-    width:calc(100%-200px);
     display: flex;
     flex-wrap: wrap;
     margin: 10px 0px;
     justify-content: flex-start;
-    margin-right:20px;
     align-items: flex-start;
 }
+
+.artisti{
+    margin: 10px 0px ;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.artisti_items{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 0px;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.artisti_items .foto img{
+    border-radius: 50%;
+}
+
 
 
 
@@ -535,7 +559,7 @@ footer{
 
     .right i,
     .right .progress{
-        margin:0px 4px;
+        margin:0px 5px;
         color:white;
         font-size:10px;
     }
@@ -579,6 +603,8 @@ footer{
     .div-nav ul {
         list-style-type: none;
         display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
     } 
     
     .div-nav ul li a{
@@ -598,7 +624,7 @@ footer{
         display: flex;
         flex-wrap: wrap;
         margin: 10px 0px;
-        justify-content: space-around;
+        justify-content: flex-start;
         align-items: flex-start;
     }
     
@@ -614,6 +640,7 @@ footer{
         justify-content: center;
         align-items: center;
         cursor: pointer;
+        margin-right: 20px;
     }
     
     .foto img{
