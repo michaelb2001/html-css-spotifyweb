@@ -46,6 +46,7 @@ nav ul{
     display:flex;
     flex-direction: column;
     justify-items: center;
+    list-style-type: none;
 }
 .icon{
     height: 14px;
@@ -197,8 +198,29 @@ footer{
     background-color: rgb(150, 150, 150);;
     border-radius: 15px;
     padding:2px;
+    position: relative;
 }
 
+.progress_due{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 40%;
+    background-color: white;
+}
+
+.cerchio{
+    position: absolute;
+    background: white;
+    height: 15px;
+    width: 15px;
+    top: 50%;
+    right: -5%;
+    border-radius: 50%;
+    transform: translate(0%, -50%);
+    display: none;
+}
 .right i,
 .right .progress{
     margin:0px 10px;
@@ -310,7 +332,7 @@ footer{
 .fc .hover-play{
     display: none;
     position: absolute;
-    top:35%;
+    top:40%;
     color: white;
     font-size: 30px;
 }
@@ -338,7 +360,7 @@ footer{
 }
 
 .artisti{
-    margin: 10px 0px ;
+    margin: 50px 0px ;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -356,7 +378,28 @@ footer{
 }
 
 
+/*effetti hover*/
 
+nav ul li:hover,
+.playlist span:hover,
+.playlist p:hover,
+.text span:hover,
+.div-nav ul li:hover a{
+    color: white;
+}
+
+
+.div-head span:hover{
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.progress:hover .progress_due{
+    background-color: rgb(16, 189, 0);
+}
+.progress:hover .cerchio{
+    display: block;
+}
 
 
 
@@ -554,8 +597,17 @@ footer{
         background-color: rgb(150, 150, 150);;
         border-radius: 15px;
         padding:2px;
+        position: relative;
     }
     
+    .progress_due{
+        position: absolute;
+        width: 40%;
+        height:100%;
+        top: 0%;
+        left: 0%;
+        background-color: white;
+    }
 
     .right i,
     .right .progress{
@@ -671,7 +723,7 @@ footer{
     .fc .hover-play{
         display: none;
         position: absolute;
-        top:35%;
+        top:40%;
         color: white;
         font-size: 30px;
     }
